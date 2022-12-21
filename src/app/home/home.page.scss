@@ -1,26 +1,72 @@
 @import url(https://fonts.googleapis.com/css?family=The+Girl+Next+Door);
 
-.new-background-color{
+.new-background-color {
   --background: #fb2b2b;
 }
 
-ion-content{
-  --ion-background-color: rgba(52, 152, 219,1.0);;
+ion-content {
+  --ion-background-color: rgba(52, 152, 219, 1.0);
+  ;
 }
 
-*, *::after, *::before{
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  background-color: #d5372e;
+  box-shadow: 5px -5px rgb(128, 0, 0);
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: #e9655e;
+}
+
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 50px;
+}
+
+p {
+  font-family: 'Pinyon Script';
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+.santa {
+  position: absolute;
+  left: 90px;
+  /* posiciona a 90px para a esquerda */
+  bottom: 62px;
+  /* posiciona a 70px para baixo */
+}
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
 
-*::after, *::before{
+*::after,
+*::before {
   position: absolute;
   content: "";
 }
 
-#circulo{
+#circulo {
   position: relative;
   margin: 0 auto;
   width: 200px;
@@ -29,7 +75,7 @@ ion-content{
 }
 
 
-#cabeca{
+#cabeca {
   left: 22%;
   top: 28%;
   width: 110px;
@@ -37,25 +83,27 @@ ion-content{
   background: #faca88;
   border-radius: 100%;
 }
+
 /*orelhas*/
-#cabeca::after, #cabeca::before{
+#cabeca::after,
+#cabeca::before {
   width: 8px;
   height: 20px;
   top: 34%;
   background: #eb9896;
 }
 
-#cabeca::after{
+#cabeca::after {
   left: -5%;
   border-radius: 10px 0 0 10px;
 }
 
-#cabeca::before{
+#cabeca::before {
   left: 98%;
   border-radius: 0 10px 10px 0;
 }
 
-#olho{
+#olho {
   width: 8px;
   height: 8px;
   border-radius: 100%;
@@ -66,7 +114,7 @@ ion-content{
   box-shadow: 57px 0px #484a4c;
 }
 
-#nariz{
+#nariz {
   width: 24px;
   height: 18px;
   border-radius: 100%;
@@ -76,7 +124,7 @@ ion-content{
   z-index: 10;
 }
 
-#boca{
+#boca {
   width: 25px;
   height: 10px;
   top: 66%;
@@ -86,16 +134,16 @@ ion-content{
   z-index: 10;
 }
 
-#chapeu{
+#chapeu {
   left: 30%;
   top: 10%;
   width: 80px;
   height: 40px;
   background: red;
-  border-radius: 0 100% 0 0; 
+  border-radius: 0 100% 0 0;
 }
 
-#chapeu::after{
+#chapeu::after {
   width: 25px;
   height: 25px;
   background: white;
@@ -104,7 +152,7 @@ ion-content{
   top: -24%;
 }
 
-#gorro{
+#gorro {
   top: 25%;
   left: 21%;
   width: 110px;
@@ -114,9 +162,9 @@ ion-content{
   border-radius: 6px;
 }
 
-#barba{
+#barba {
   width: 150px;
-  height:90px;
+  height: 90px;
   background: white;
   top: 47%;
   left: 10%;
@@ -125,11 +173,11 @@ ion-content{
   z-index: 2;
 }
 
-.absoluto{
+.absoluto {
   position: absolute;
 }
 
-#corpo{
+#corpo {
   width: 100%;
   height: 100px;
   top: 67%;
@@ -139,36 +187,36 @@ ion-content{
   z-index: 1;
 }
 
-#corpo::before{
+#corpo::before {
   width: 100%;
   height: 30px;
   /**background: #636466;*/
-  background: -webkit-gradient(linear, left top, right top, color-stop(38%,#636466), color-stop(39%,#f5b417), color-stop(60%,#f5b417), color-stop(61%, #636466));
+  background: -webkit-gradient(linear, left top, right top, color-stop(38%, #636466), color-stop(39%, #f5b417), color-stop(60%, #f5b417), color-stop(61%, #636466));
   bottom: -28px;
   border-bottom: solid 1px #636466;
   border-top: solid 1px #636466;
 }
 
-#braco-esquerdo{
+#braco-esquerdo {
   top: 70%;
   left: -20%;
   width: 100px;
   height: 40px;
-  background:#d5372e; 
+  background: #d5372e;
   border-radius: 0 0 0 40px;
 }
 
-#braco-esquerdo::after{
+#braco-esquerdo::after {
   left: 4.5%;
   width: 40px;
   height: 80px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #b8601c), color-stop(51%,#d5372e));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #b8601c), color-stop(51%, #d5372e));
   top: -192%;
   border-radius: 25px 25px 0 0;
   -webkit-transform: rotate(8deg);
 }
 
-#braco-esquerdo::before{
+#braco-esquerdo::before {
   top: -105%;
   width: 50px;
   height: 15px;
@@ -179,7 +227,7 @@ ion-content{
   -webkit-transform: rotate(6deg);
 }
 
-#dedo-esquerdo{
+#dedo-esquerdo {
   top: -160%;
   left: 40%;
   width: 15px;
@@ -189,7 +237,7 @@ ion-content{
   -webkit-transform: rotate(40deg);
 }
 
-#saco{
+#saco {
   width: 150px;
   height: 150px;
   background: #7e4a04;
@@ -198,10 +246,10 @@ ion-content{
   top: 52%;
 }
 
-#braco-direito{
+#braco-direito {
   top: 70%;
   left: 80%;
-  width:40px;
+  width: 40px;
   height: 40px;
   background: #b8601c;
   border-radius: 100%;
